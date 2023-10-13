@@ -7,7 +7,6 @@ import MovieList from './components/MovieList';
 import Filter from './components/Filter'
 
 
-
 function App() {
   const [movielist, setmovielist] = useState(movies)
   const addHandler=(newMovie)=>{

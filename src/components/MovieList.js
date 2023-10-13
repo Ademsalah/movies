@@ -4,7 +4,9 @@ export default function MovieList({ movielist,search }) {
   return (
     <div>
       <div className='movieListContainer'>{
-        movielist.map((el,key)=>  <MovieCard  key={el.id} movie={el}/>)
+        movielist.filter((el)=> (el.Title.toLowerCase().includes(search.toLowerCase().trim()))
+		)
+		.map((el,key)=>  <MovieCard  key={el.id} movie={el}/>)
       }
       </div>
       

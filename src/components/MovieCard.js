@@ -12,7 +12,7 @@ export default function MovieCard({movie}) {
         <Card.Text>
           {movie.Description}
         </Card.Text>
-        <Rate  rate={movie.rate} />
+        <Rate  rate={movie.rating} />
       </Card.Body>
     </Card>
     </div>

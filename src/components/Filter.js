@@ -15,7 +15,7 @@ export default function Filter({setsearch}) {
           onChange={(e)=>setsearch(e.target.value)}
         />
       </InputGroup>
-      <Rate  rate={1}/> 
+      <Rate  rate={1} /> 
     </div>
     </>
   );
