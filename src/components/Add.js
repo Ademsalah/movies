@@ -11,7 +11,11 @@ function Add({addHandler}) {
   const [PosterURL,setPosterURL]= useState("")
   const [Rating,setRating]= useState("")
   const addMovie=()=>{
-  const newMovie={id: Math.random(), title,Rating,description,PosterURL} 
+  const newMovie={id: Math.random(), 
+	Title:title,
+	Rating:Rating,
+	Description:description,
+	PosterURL:PosterURL} 
     addHandler(newMovie )
     handleClose();
   }
